@@ -1,0 +1,7 @@
+<%= link_to "タスク一覧", new_task_path %>
+<% @tasks.each do |task| %>
+  <p>
+     <%= task.tittle %>
+     <%= task.contents %>
+  </p>
+<% end %>
