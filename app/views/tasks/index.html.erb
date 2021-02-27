@@ -1,7 +1,8 @@
-<%= link_to "タスク一覧", new_task_path %>
+<h1>タスク 一覧</h1>
+<%= link_to "投稿画面へ", new_task_path %>
 <% @tasks.each do |task| %>
   <p>
-     <%= task.tittle %>
-     <%= task.contents %>
+      <%= task.tittle %>
+      <%= link_to "詳細", task_path(task) %>
   </p>
 <% end %>
