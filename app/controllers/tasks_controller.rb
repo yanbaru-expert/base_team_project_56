@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
- 
   def index
     @tasks = Task.all
   end
@@ -25,9 +24,9 @@ class TasksController < ApplicationController
     task.update(task_params)
   end
 
-  def destory
+  def destroy
     task = Task.find(params[:id])
-    task.destory
+    task.destroy
   end
 
   private
